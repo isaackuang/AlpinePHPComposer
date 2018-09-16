@@ -1,5 +1,6 @@
 FROM isaackuang/alpine-base:3.8.0
 
+
 RUN curl https://php.codecasts.rocks/php-alpine.rsa.pub -o /etc/apk/keys/php-alpine.rsa.pub && \
     echo 'http://nl.alpinelinux.org/alpine/edge/main' >> /etc/apk/repositories && \
     echo 'http://nl.alpinelinux.org/alpine/edge/community' >> /etc/apk/repositories && \
