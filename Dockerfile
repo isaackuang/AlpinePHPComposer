@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 FROM isaackuang/alpine-base:3.8.0
+=======
+FROM isaackuang/alpine-base:3.7.0
+>>>>>>> de97b83cfe62f16a6e9c7ef977a79a2966e45189
 
 RUN curl https://php.codecasts.rocks/php-alpine.rsa.pub -o /etc/apk/keys/php-alpine.rsa.pub && \
     echo 'http://nl.alpinelinux.org/alpine/edge/main' >> /etc/apk/repositories && \
