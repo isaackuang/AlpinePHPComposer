@@ -11,7 +11,9 @@ RUN apk add --update curl ca-certificates && \
     php7-ctype@php php7-pcntl@php php7-iconv@php php7-mbstring@php php7-tokenizer@php php7-dev@php php7-pear@php \
     php7-xmlwriter@php php7-mongodb@php php7-simplexml@php php7-yaml@php php7-ssh2@php && \
     rm /var/cache/apk/* && \
-    curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
+    curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer && \
+    cd /usr/bin && wget -O phpunit https://phar.phpunit.de/phpunit-8.phar && \
+    chmod +x phpunit
 
 
 WORKDIR /var/www/html
