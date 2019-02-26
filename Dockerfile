@@ -2,8 +2,8 @@ FROM isaackuang/alpine-base:3.8.0
 
 
 RUN apk add --update curl ca-certificates && \
-    curl https://php.codecasts.rocks/php-alpine.rsa.pub -o /etc/apk/keys/php-alpine.rsa.pub && \
-    echo "@php https://php.codecasts.rocks/v3.8/php-7.2" >> /etc/apk/repositories && \
+    curl https://dl.bintray.com/php-alpine/key/php-alpine.rsa.pub -o /etc/apk/keys/php-alpine.rsa.pub && \
+    echo "@php https://dl.bintray.com/php-alpine/v3.8/php-7.2" >> /etc/apk/repositories && \
     apk --no-cache --progress add \
     g++ gcc make zlib-dev wget autoconf curl git \
     php7@php php7-cli@php php7-curl@php php7-openssl@php php7-gd@php php7-xmlreader@php php7-zip@php \
