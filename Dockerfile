@@ -1,4 +1,4 @@
-FROM isaackuang/swoole
+FROM isaackuang/alpine-base:3.8
 
 
 RUN apk add --update curl ca-certificates && \
